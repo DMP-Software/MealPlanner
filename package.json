@@ -1,6 +1,7 @@
 {
   "name": "meal-planner",
   "version": "0.1.0",
+  "homepage": "https://dmp-software.github.io/MealPlanner/",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^3.9.0",
