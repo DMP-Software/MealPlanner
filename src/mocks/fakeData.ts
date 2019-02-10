@@ -1,4 +1,4 @@
-import { MealPlanner, Ingredient, Category, Recipe, TimeOfDay, Day, Week } from "./interfaces/plannerModels";
+import { MealPlanner, Ingredient, Category, Recipe, TimeOfDay, Day, Week } from "../interfaces/plannerModels";
 
 const ingredient: Ingredient = {
   name: 'Tomato',
@@ -22,13 +22,13 @@ const timeOfDay: TimeOfDay = {
 }
 
 const day: Day = {
-  name: 'Monday',
+  name: 'Example day',
   recipes: new Map([[timeOfDay, [recipe]]])
 }
 
 const week: Week = {
   name: 'First week',
-  days: [day]
+  days: [day, day, day, day, day, day, day]
 }
 
 export const fakeData: MealPlanner = {
