@@ -7,13 +7,13 @@ import { Week } from '../../interfaces/plannerModels';
 const getCurrentWeek = (weeks: Week[]) => {
   const lastWeek = weeks[weeks.length - 1];
 
-  return <WeekDisplay week={lastWeek}/>
+  return lastWeek;
 }
 
 export const MealPlanner: React.FunctionComponent = () => {
   return (
     <section>
-        {getCurrentWeek(fakeData.weeks)}
+        <WeekDisplay week={getCurrentWeek(fakeData.weeks)}/>
     </section>
   );
 }
