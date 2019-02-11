@@ -29,9 +29,13 @@ const timeOfDay: TimeOfDay = {
   name: 'Breakfast'
 };
 
+const timeOfDay2: TimeOfDay = {
+  name: 'Dinner'
+};
+
 const day: Day = {
   name: 'Example day',
-  recipes: new Map([[timeOfDay, [recipe]]])
+  recipes: new Map([[timeOfDay, [recipe]], [timeOfDay2, [recipe, recipe]]])
 };
 
 const week: Week = {

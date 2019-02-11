@@ -1,9 +1,7 @@
-import './weekDisplay.scss';
-
 import * as React from 'react';
 
+import './weekDisplay.scss';
 import { Day, Week } from '../../../interfaces/plannerModels';
-
 import { SingleDay } from '../SingleDay/SingleDay';
 
 type Props = {
@@ -11,7 +9,7 @@ type Props = {
 };
 
 const getDays = (days: Day[]) => {
-  return days.map(day => <SingleDay day={day} />);
+  return days.map((day, i) => <SingleDay day={day} key={`${day.name}_${i}`} />);
 };
 
 export const WeekDisplay: React.FunctionComponent<Props> = props => {
