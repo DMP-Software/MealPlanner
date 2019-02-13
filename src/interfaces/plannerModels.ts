@@ -1,10 +1,9 @@
 export interface Ingredient {
   name: string;
   amount: number;
-  unit: string; // TODO: enum
+  unit: string;
 }
 
-// TODO: list of available categories
 export interface Category {
   name: string;
 }
