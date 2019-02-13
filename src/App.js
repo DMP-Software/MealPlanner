@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 
 import { Header } from './components/Header/Header.tsx';
 import { MealPlanner } from './components/Planner/MealPlanner';
+import { AddRecipeForm } from './components/AddRecipe/AddRecipeForm';
 
 class App extends Component {
   render() {
@@ -11,6 +12,7 @@ class App extends Component {
         <Header />
         <Switch>
           <Route exact path="/" component={MealPlanner} />
+          <Route path="/add-recipe" component={AddRecipeForm} />
         </Switch>
       </div>
     );
