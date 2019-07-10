@@ -1,0 +1,8 @@
+@import './variables.scss';
+
+.app {
+  &__main-content {
+    padding: 0 $white-space;
+    margin-top: $white-space;
+  }
+}
