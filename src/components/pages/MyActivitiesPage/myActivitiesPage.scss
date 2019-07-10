@@ -1,0 +1,7 @@
+@import '../../../styles/mixins.scss';
+
+.my-activities-page {
+  &__title {
+    @include title-default;
+  }
+}

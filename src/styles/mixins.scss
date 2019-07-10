@@ -1,0 +1,9 @@
+@import './variables.scss';
+
+@mixin title-default {
+  font-size: 2em;
+  background: -webkit-linear-gradient(right, $purple, $primary-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
