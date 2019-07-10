@@ -1,0 +1,7 @@
+@import '../../../styles/mixins.scss';
+
+.progress-report-page {
+  &__title {
+    @include title-default;
+  }
+}
